@@ -20,6 +20,10 @@ export const PROJECT = [
         infoTitle: "URL",
         infoContent: "https://kswoooo.github.io/portfolio/",
       },
+      {
+        infoTitle: "GitHub",
+        infoContent: "https://github.com/Kswoooo/project_portfolio",
+      },
     ],
     images: [
       "intro.png",

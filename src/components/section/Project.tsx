@@ -121,7 +121,7 @@ const Project = () => {
                 <div key={infoTitle} className="info-wrap">
                   <div className="info-title">{infoTitle}</div>
                   <div className="info-content">
-                    {infoTitle === "URL" ? (
+                    {infoTitle === "URL" || infoTitle === "GitHub" ? (
                       <a href={infoContent}>{infoContent}</a>
                     ) : (
                       <p>{infoContent}</p>
