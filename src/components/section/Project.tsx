@@ -228,6 +228,7 @@ const ProjectBox = styled(motion.div)`
 
     & span {
       color: #999;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
 
       margin-bottom: 3px;
       margin-left: 1rem;
@@ -265,6 +266,8 @@ const ProjectBox = styled(motion.div)`
 
     white-space: pre-line;
 
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+
     .content {
       font-size: 1.2rem;
 
@@ -295,6 +298,7 @@ const ProjectBox = styled(motion.div)`
       padding: 2rem 0 1rem;
 
       border-top: 1px solid #ccc;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
       
       .info-wrap {
         margin-bottom: 1rem;
@@ -324,6 +328,7 @@ const ProjectBox = styled(motion.div)`
           font-size: 1rem;
 
           display: inline-block;
+          
 
           & a {
             color: #1e9acb;
