@@ -9,10 +9,10 @@ const Profile = () => {
       <ProfileInner>
         <p className="profile-title">PROFILE</p>
         <ProfileTextWrap>
-          <p className="title">안녕하세요!</p>
-          <p className="title">
-            저는 <span className="name">김성우</span> 입니다 👋
-          </p>
+            <p className="title">안녕하세요!</p>
+            <p className="title">
+              저는 <span className="name">김성우</span> 입니다!
+            </p>
         </ProfileTextWrap>
         <ProfileContentWrap>
           <div className="left">
@@ -95,24 +95,25 @@ const ProfileInner = styled.div`
 `;
 
 const ProfileTextWrap = styled.div`
-  .title {
-    color: #3a3a3a;
 
-    font-family: "SBAggroB";
-    font-size: 3rem;
+    .title {
+      color: #3a3a3a;
 
-    text-align: center;
+      font-family: "SBAggroB";
+      font-size: 3rem;
 
-    &:first-child {
-      margin-bottom: 1rem;
+      text-align: center;
+
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+
+      .name {
+        color: #00dfa2;
+
+        font-size: 3.5rem;
+      }
     }
-
-    .name {
-      color: #00dfa2;
-
-      font-size: 3.5rem;
-    }
-  }
 
   @media screen and (max-width: 599px) {
     /* 모바일 세로 */

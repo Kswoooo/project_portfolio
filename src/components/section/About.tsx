@@ -14,7 +14,7 @@ const About = () => {
           <AboutContentBox>
             {ABOUT.map(({ src, content, subContent }) => (
               <AboutItemBox key={subContent}>
-                <span className="img">{src}</span>
+                <img className="img" src={require(`../../assets/images/about/${src}`)} alt=""/>
                 <p className="item-text">{content}</p>
                 <p className="item-sub-text">{subContent}</p>
               </AboutItemBox>
@@ -54,6 +54,11 @@ const AboutInner = styled.div`
     left: 50%;
 
     transform: translate(-50%);
+  }
+
+  @media screen and (max-width: 1282px) {
+    /* 타블렛 가로 */
+    padding: 180px 100px 125px;
   }
 
   @media screen and (max-width: 1199px) {
@@ -190,8 +195,8 @@ const AboutItemBox = styled.div`
   height: 300px;
 
   .img {
-    font-size: 10rem;
-    margin-bottom: 1rem;
+    width: 60%;
+    margin-bottom: 2rem;
   }
 
   .item-text {
@@ -211,9 +216,6 @@ const AboutItemBox = styled.div`
   }
 
   @media screen and (max-width: 992px) {
-    .img {
-      font-size: 8rem;
-    }
 
     .item-text {
       font-size: 1.3rem;
